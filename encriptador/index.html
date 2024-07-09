@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title-section">
+        <h1>Encriptador de Textos</h1>
+    </div>
+    <div class="container">
+        <header>
+            <img src="recursos/logo.png" alt="Logo" class="logo">
+        </header>
+        <main>
+            <section class="input-section">
+                <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="buttons">
+                    <button onclick="encryptText()">Encriptar</button>
+                    <button onclick="decryptText()">Desencriptar</button>
+                    <button onclick="clearOutput()">Clear</button>
+                </div>
+            </section>
+            <section class="output-section">
+                <div class="output-header">Ningún mensaje fue encontrado</div>
+                <textarea id="outputText" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
+            </section>
+        </main>
+        <footer>
+            Creado por Carlos Esquivel
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
