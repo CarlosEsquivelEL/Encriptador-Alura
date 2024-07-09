@@ -1,11 +1,10 @@
-// scripts.js
 function encryptText() {
     let inputText = document.getElementById('inputText').value;
     if (inputText.trim() !== '') {
-        let encryptedText = btoa(inputText); // Using base64 encoding for simplicity
+        let encryptedText = btoa(inputText); 
         let outputTextArea = document.getElementById('outputText');
         outputTextArea.value += (outputTextArea.value ? '\n' : '') + encryptedText;
-        document.getElementById('inputText').value = ''; // Clear the input text area
+        document.getElementById('inputText').value = ''; 
     }
 }
 
